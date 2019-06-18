@@ -48,7 +48,8 @@ $(function () {
 			"display": "none"
 		})
 		$(".theses_image:nth-child(1)").fadeIn(300);
-
+		$(".our_thesis_text span").removeClass("span_active");
+		$(".span_one").addClass("span_active");
 	});
 
 	$('.theses_link:nth-child(2) a').click(function () {
@@ -56,42 +57,48 @@ $(function () {
 			"display": "none"
 		})
 		$(".theses_image:nth-child(2)").fadeIn(300);
-
+		$(".our_thesis_text span").removeClass("span_active");
+		$(".span_one").addClass("span_active");
 	});
 	$('.theses_link:nth-child(3) a').click(function () {
 		$(".theses_image").css({
 			"display": "none"
 		})
 		$(".theses_image:nth-child(3)").fadeIn(300);
-
+		$(".our_thesis_text span").removeClass("span_active");
+		$(".span_one").addClass("span_active");
 	});
 	$('.theses_link:nth-child(4) a').click(function () {
 		$(".theses_image").css({
 			"display": "none"
 		})
 		$(".theses_image:nth-child(4)").fadeIn(300);
-
+		$(".our_thesis_text span").removeClass("span_active");
+		$(".span_two").addClass("span_active");
 	});
 	$('.theses_link:nth-child(5) a').click(function () {
 		$(".theses_image").css({
 			"display": "none"
 		})
 		$(".theses_image:nth-child(5)").fadeIn(300);
-
+		$(".our_thesis_text span").removeClass("span_active");
+		$(".span_three").addClass("span_active");
 	});
 	$('.theses_link:nth-child(6) a').click(function () {
 		$(".theses_image").css({
 			"display": "none"
 		})
 		$(".theses_image:nth-child(6)").fadeIn(300);
-
+		$(".our_thesis_text span").removeClass("span_active");
+		$(".span_four").addClass("span_active");
 	});
 	$('.theses_link:nth-child(7) a').click(function () {
 		$(".theses_image").css({
 			"display": "none"
 		})
 		$(".theses_image:nth-child(7)").fadeIn(300);
-
+		$(".our_thesis_text span").removeClass("span_active");
+		$(".span_five").addClass("span_active");
 	});
 
 

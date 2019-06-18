@@ -5,10 +5,193 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
+	.nav-wrap ul li
+		margin-bottom: 10px
+	.nav-wrap ul
+		margin-top: -100px
+	.header h1 
+		font-size: 30px
+		line-height: 1.4
+	.header .down_text .grey_line
+		display: none
+	.header .down_text a
+		font-size: 12px
+	.header .down_text
+		margin-left: 64px
+	.owl-dotss
+		margin-top: 15px
+	h2
+		font-size: 38px
+		line-height: 1.4
+	.about_us .videoPoster
+		height: 460px
+	.about_us .video_wrapper_full
+		padding-top: 460px
+	.who_we_are .who_we_text
+		width: 100%
+		max-width: 315px
+	.our_thesis .our_thesis_text
+		width: 100%
+		padding-left: 50px
+	.our_thesis .theses_links_wrapper .theses_link
+		margin-right: 37px
+	.what_we_do .what_we_do_text
+		width: 100%
+		padding-left: 50px
+	.what_we_do
+		.what_we_do_mobile
+			display: block
+		
+	.what_we_do_content
+		display: none
+	.chatr
+		display: none
+	.chatr_tips_wrapper
+		display: none
+	.what_we_do .what_we_do_text
+		padding-bottom: 50px
+	.partners_image
+		display: none
+	.partners
+		.partner_images_mobile
+			display: block
+			img
+				width: 100%
+	.blog .blog_wrapper
+		padding: 0px
+		margin-top: -400px
+		.blog_kart
+			max-width: 600px
+			margin: auto
+			position: relative
+			
+				margin-top: -200px
+			.img_blog
+				height: 400px
+			a
+				p
+					font-size: 26px
+					padding: 42px 57px
+	.blog_background
+		h2
+			margin-bottom: 32px
 // ≥992px
 +media-breakpoint-down(md)
+	.header
+		height: 100vh
+		.main_header
+			height: 50vh
+		.down
+			display: none
+	.header .owl-carousel
+		height: 50vh
+		position: relative
+		
+	.nav-wrap
+		display: none
+	.header
+		h1
+			line-height: 56px
+			font-size: 40px
+		.owl_block
+			position: relative
+			
+		.main_header
+			padding-left: 80px
+			padding-bottom: 20px
+		.down_text
+			margin-bottom: 42px
+			margin-left: 80px
 
+			a
+				font-size: 14px
+				line-height: 28px
+				color: $accent	
+				letter-spacing: 1px
+	.owl-dotss
+		bottom: 35px
+		margin-right: 20px
+	.about_us
+		.block_name
+			margin-top: 94px
+			margin-left: 80px
+			letter-spacing: 1px
+		h2
+			line-height: 46px
+			margin-left: 80px
+		.video_block_wrapper
+			padding-right: 0px
+			margin-top: -5px
+
+		.videoPoster
+			width: 606px
+			
+			display: block
+			margin: auto
+			text-align: center
+			left: 50%
+			margin-left: -303px
+			height: 342px
+			&:hover
+				background-size: 100% 100%
+			i
+				font-size: 9px
+				line-height: 0
+				margin-left: -2px
+				margin-top: -1px
+			&:before
+				width: 53.5px
+				height: 53.5px
+				margin: -27px 0 0 -27px
+		.video_wrapper_full 
+			margin: 0
+			height: 1px
+			display: block
+			text-align: center
+			padding-top: 342px
+		.videoIframe 
+			width: 606px
+			margin: auto
+			
+		.videoPoster:hover:before ,  .videoPoster:focus:before	
+			width: 53.5px
+			height: 53.5px
+			margin: -27px 0 0 -27px
+	.who_we_are
+		h2		
+			padding-top: 57px
+		.who_we_text
+			width: 100%
+			max-width: 100%
+			margin-left: 0px
+			padding: 0px 80px 0px 80px
+	.our_thesis
+		.block_name
+			margin-left: 0px
+			letter-spacing: 1px
+			margin-top: 66px
+			margin-bottom: 10px
+		h2
+			margin-left: 0px
+		.our_thesis_text_wrapper
+			padding: 0px
+			.our_thesis_text
+				padding: 0px 20px	
+				margin-top: 0px
+	.what_we_do
+		.block_name
+			margin-top: 65px
+			margin-bottom: 9px
+			margin-left: 0px
+			letter-spacing: 1px
+		h2
+			margin-left: 0px
+		.checkbox_what_we_do
+			.checkbox_what_we_do_img_slide_1 , .checkbox_what_we_do_img_slide_2 , .checkbox_what_we_do_img_slide_3 , .checkbox_what_we_do_img_slide_4
+				img
+					padding-left: 50px
+		.what_we_do_mobile
+			margin-top: -9px
 // ≥768px
 +media-breakpoint-down(sm)
 

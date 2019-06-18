@@ -845,3 +845,1073 @@ h3
 	.blog .blog_wrapper .blog_kart
 		margin-top: -296px	
 @import "media" // Always at the end
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.inview
+	opacity: 0
+	transition: opacity 0.3s ease-in
+	&.active
+		opacity: 1
+
+
+.spinner-dot
+	width: 7px
+	height: 7px
+	.round
+		stroke: none
+		fill: none
+		stroke-width: 2px
+		stroke-dasharray: 0 50
+		transform-origin: center center
+		transform: rotate(-90deg) scale(1, -1)
+
+	.bg
+		stroke-width: 2px
+		stroke: none
+		fill: #22242A
+	&.active
+		width: 16px
+		height: 26px
+		margin-left: -4px
+		&:hover
+			.bg
+				fill: none
+				stroke: #18BDF1
+			.round
+				stroke: #22242A
+		.bg
+			fill: none
+			stroke: #18BDF1
+		.round
+			stroke: #22242A
+			animation: spinner-fluid 9s linear infinite
+
+@keyframes spinner-fluid
+  0%
+    stroke-dasharray: 50 0
+  55%
+    stroke-dasharray: 0 50
+    stroke-dashoffset: 0
+  100%
+    stroke-dashoffset: -50
+.owl-dotss
+	position: absolute
+	margin-right: 30px	
+	right: 0px
+	margin-top: 75px
+	padding-right: 10px
+	svg
+		position: relative
+		height: 26px
+		display: block
+		vertical-align: middle
+		cursor: pointer
+		
+		&:hover
+			transition: all 0.2s
+			width: 16px
+			margin-left: -4px
+			.bg
+				fill: $accent
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.nav-wrap
+	background-color: #F9FAFB
+	height: 100vh
+	position: fixed
+	left: 0px
+	text-align: center
+	width: 177px
+	vertical-align: middle
+	z-index: 9
+	.logo
+		margin-top: 35px
+		img
+			display: block
+			margin: auto
+			width: 37px
+			&:last-child
+				margin-top: 15px
+				width: 101px
+	ul
+		top: 50%
+		position: absolute
+		margin-top: -155px
+		text-align: left
+		padding-left: 37px
+		vertical-align: middle
+		li
+			list-style-type: none
+			margin-bottom: 18px
+			display: block
+			
+			width: 140px
+			a
+				text-decoration: none
+				color: #485061
+				font-size: 16px
+				font-weight: 500
+				transition: all 0.2s
+				&:hover
+					color: $accent
+
+			.blu_line
+				background-color: $accent
+				content: ''
+				width: 0px
+				height: 2px
+				display: inline-block
+				position: absolute
+				right: 0px
+				margin-top: 13px
+				transition: width 0.2s
+		.active
+			a
+				color: $accent
+			.blu_line
+				width: 24px
+	.social_wrap
+		position: absolute
+		bottom: 0px
+		z-index: 9
+		width: 100%
+		margin-bottom: 16px
+		.social
+			display: inline-block
+			width: 30%
+			a
+				color: #838EA3
+				&:hover
+					color: #485061
+.header
+	height: 100vh
+	h1
+		font-size: 42px
+		font-family: "Khula" , sans-serif
+		font-weight: 600
+		line-height: 60px
+		width: 483px
+		vertical-align: middle
+		display: table-cell
+		vertical-align: middle
+		
+		
+	.main_header
+		height: 100vh
+		display: table
+		padding-left: 60px
+			
+	.down_text
+		position: absolute
+		bottom: 0
+		margin-left: 50px
+		margin-bottom: 35px
+		.grey_line
+			content: ''
+			height: 1px
+			width: 93px
+			background-color: #C4C9D4
+			display: inline-block
+			margin-bottom: 4px
+			margin-left: 60px
+		a
+			display: inline-block
+			color: #22242A
+			font-size: 14px
+			font-weight: bold
+			text-transform: uppercase
+			text-decoration: none
+			transition: all 0.2s 
+			&:hover
+				color: #11ACFA
+			
+	.down
+		position: absolute
+		
+		right: 0
+		bottom: 0
+		margin-bottom: 7px
+		p
+			display: inline-block
+			text-align: left
+			
+		a
+			background-color: $accent
+			width: 80px
+			height: 80px
+			display: inline-block
+			text-align: center
+			transition: all 0.2s
+			&:hover
+				background-color: #11ACFA
+			
+			img
+				width: 16px
+				margin-top: 30px
+	.owl-carousel
+		height: 100vh
+		width: auto
+		display: inline-block
+		margin-left: -15px
+		overflow: hidden
+	.owl_block
+		overflow: hidden
+
+
+
+				
+				
+		.slide1
+			background-image: url(../img/header_image_one.png)
+			height: 100vh
+			margin-top: 0px
+			width: 100%
+			background-size: cover
+			background-position-y: center
+			min-width: 600px
+		.slide2
+			background-image: url(../img/header_image_two.png)
+			height: 100vh
+			margin-top: 0px
+			width: 100%
+			background-size: cover
+			background-position-y: center
+			min-width: 600px
+		.slide3
+			background-image: url(../img/header_image_three.png)
+			height: 100vh
+			margin-top: 0px
+			width: 100%
+			background-size: cover
+			background-position-y: center
+			min-width: 600px
+	
+			
+.block_name
+	color: #828DA3
+	font-size: 14px
+	margin-top: 140px
+	margin-left: 50px
+	span
+		color: $accent
+		text-transform: uppercase
+		font-weight: bold
+h2
+	font-family: "Khula" , sans-serif
+	font-size: 44px
+	color: #22242A
+	font-weight: 600
+	line-height: 52px
+	margin-left: 50px
+h3
+	font-family: "Khula" , sans-serif
+	font-size: 24px
+	line-height: 52px
+	font-weight: 600
+	text-transform: uppercase
+	
+	color: #22242A
+.about_us
+	.block_name
+		margin-top: 148px
+		margin-bottom: 12px
+	h2
+		margin-bottom: 30px
+		&:nth-child(1)
+			margin-bottom: 10px
+	.video_block_wrapper
+		padding-right: 50px
+	.video_wrapper
+		padding-right: 50px
+		width: 100%
+		margin-left: 50px
+		position: relative
+	.video_wrapper_full
+		padding-top: 600px
+	.videoIframe
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: transparent
+	.videoPoster
+		width: 100%
+		height: 600px
+		position: absolute
+		top: 0px
+		left: 0px
+		background-image: url(../img/tedx.png)
+		background-size: 100% 100%
+		background-position-x: center
+		background-position-y: middle
+		border: none
+		overflow: hidden
+		opacity: 1
+		transition: opacity 800ms, height 0s
+		transition: background-size 300ms ease
+		i
+			color: #22242A
+			z-index: 999
+			position: absolute
+			transition: all 300ms
+		&:hover
+			cursor: pointer
+			background-size: 105% 105%
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 96px
+			height: 96px
+			margin: -42px 0 0 -42px
+			
+			border: 100%
+			border-radius: 100%
+			transition: all 300ms
+			background-color: #fff
+			
+	.videoPoster:hover:before ,  .videoPoster:focus:before	
+		width: 116px
+		height: 116px
+		margin: -52px 0 0 -52px
+	.videoPoster:hover i
+		color: #11ACFA
+	.videoWrapperActive .videoPoster 
+		opacity: 0
+		height: 0
+		transition-delay: 0s, 800ms
+.who_we_are
+	h2
+		padding-top: 105px
+	.who_we_text
+		font-size: 18px
+		margin-left: 50px
+		color: #758199
+		line-height: 30px
+		font-weight: 200
+		width: 400px
+		padding-top: 4px
+	.advantages_wrapper
+		padding-top: 102px
+		vertical-align: top
+		
+		.advantages_icons
+
+			display: inline-block
+			vertical-align: top
+			.advantages_icon
+				display: block
+				width: auto
+				height: 100%
+				
+				margin-left: -43px
+				padding-bottom: 54px
+				img
+					width: 74px
+
+		.advantages_texts
+			display: inline-block
+
+			.advantages_text	
+				height: 135px
+				color: #758199
+				font-size: 16px
+				padding-top: 12px
+				h3
+					margin-left: 25px
+					font-family: "Khula" , sans-serif
+					font-weight: 700
+					margin-top: 7px
+					line-height: 30px
+					margin-bottom: -10px
+				p
+					margin-top: 20px
+					margin-left: 25px
+					width: 330px
+	
+	.advantages_wrapper_mobile
+		display: table
+		margin-left: -6px
+		margin-top: 24px
+		.advantages_icon_mobile
+			display: table-cell
+			img
+				width: 70px
+				margin-bottom: -10px
+		.advantages_text_mobile
+
+			display: table-cell
+			padding-left: 20px
+			h3
+				line-height: 13px
+				font-size: 20px
+				text-transform: uppercase
+				font-family: "Khula" , sans-serif
+				font-weight: bold
+				margin-top: -10px
+			p
+				color: #758199
+				margin-bottom: 1px
+				max-width: 240px
+	.advantages_wrapper_mobile_first
+		margin-left: 77px			
+.our_thesis
+	.block_name
+		margin-top: 91px
+		text-align: center
+		margin-left: -50px
+		margin-bottom: 14px
+
+	h2
+		text-align: center
+		margin-left: -50px
+	.our_thesis_text
+		color: #758199
+		font-size: 18px
+		font-weight: 400
+		line-height: 30px
+		text-align: center
+		width: 850px
+		margin: auto
+		margin-top: 13px
+		
+		.span_active
+			color: $accent
+			font-weight: 600
+	.our_thesis_text_wrapper
+		padding-right: 60px
+	.theses_links_wrapper
+		margin-left: 48px
+		margin-top: 30px
+		.theses_link
+			display: inline-block
+			margin-right: 40px
+			.blue_line
+				background-color: #fff
+				width: 24px
+				height: 2px
+				content: ''	
+				margin: auto
+				margin-top: -7px
+		.theses_link_active
+			a
+				color: $accent
+				font-weight: bold
+			.blue_line
+				background-color: $accent
+				
+		a
+			color: #758199
+			font-weight: 500
+			font-size: 18px
+			line-height: 58px
+			
+			text-decoration: none
+			&:hover
+				color: $accent
+	.theses_links_wrapper_mobile
+		padding-top: 42px
+		.checkbox_our_theses
+			padding-right: 62px
+			label
+				width: 100%
+				text-align: left
+				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06)
+				display: block
+				padding: 15px 0px  15px 32px
+				margin-left: 30px
+				font-family: "Roboto" , sans-serif
+				font-size: 18px
+				font-weight: 700
+				color: #758199
+				position: relative
+				input
+					opacity: 0
+				span
+					text-align: right
+					position: absolute
+					right: 0
+					left: 100%
+					margin-left: -48px
+					width: 16px
+					height: 2px
+					background-color: $accent
+					top: 50%
+					margin-top: -1px
+					transition: all 0.2s
+					&:before
+						content: ''
+						width: 8px
+						height: 2px
+						margin-top: -3px
+						margin-left: 8px
+						display: block
+						background: $accent
+						position: absolute
+						transform: rotate(45deg)
+						transition: all 0.2s
+					&:after
+						content: ''
+						width: 8px
+						height: 2px
+						margin-top: 3px
+						margin-left: 8px
+						display: block
+						background: $accent
+						position: absolute
+						transform: rotate(-45deg)
+						transition: all 0.2s
+				.arrow_active
+					&:before
+						transform: rotate(0deg)
+						margin-top: 0px
+						height: 0px
+					&:after
+						transform: rotate(0deg)
+						margin-top: 0px
+						height: 0px
+			.our_thesis_slide_img_1 ,.our_thesis_slide_img_2,.our_thesis_slide_img_3,.our_thesis_slide_img_4,.our_thesis_slide_img_5,.our_thesis_slide_img_6,.our_thesis_slide_img_7
+				display: none
+
+				img
+					width: 100%		
+					padding-left: 50px
+					
+					padding-top: 30px
+					padding-bottom: 30px			
+	.theses_images
+		.theses_image
+			display: none
+			padding: 38px 50px 52px 50px
+			&:nth-child(1)
+				display: block
+			img
+				width: 100%
+				box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06)
+.what_we_do
+	padding-bottom: 50px
+	h2
+		text-align: center
+		margin-left: -50px	
+	.block_name
+		text-align: center
+		margin-left: -50px
+		margin-top: 100px
+		margin-bottom: 15px
+	.what_we_do_text
+		text-align: center
+		color: #758199
+		font-size: 18px
+		font-weight: normal
+		max-width: 810px
+		display: block
+		margin: auto
+		margin-top: 5px
+	.owhat_we_do_text_wrapper
+		padding-right: 40px
+	.what_we_do_mobile
+		display: none
+		
+	.what_we_do_content
+		.content_menu
+			max-width: 338px
+			box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08)
+			margin-top: 111px
+			margin-left: 43px
+			display: inline-block
+			
+			.menu_link
+				background-color: #fff
+				border: none
+				color: #758199
+				font-size: 18px
+				padding: 26px
+				padding-left: 32px
+				padding-right: 0px
+				display: block
+				width: 100%
+				text-align: left
+				outline: none
+				cursor: pointer
+				border-bottom: 1px #DCE2ED solid
+				font-weight: 500
+
+				&:last-child
+					border: none
+				&:hover
+					color: $accent
+				i
+					font-size: 15px
+					padding: 0px 20px
+					padding-right: 30px
+					color: #fff
+					transition: all 0.3s
+			.menu_link_active	
+				i
+					color: $accent	
+				
+				color: $accent
+				font-weight: bold
+	.chatr
+		
+		img
+			width: 100%
+			margin-top: 114px
+			margin-left: -100px
+	.chatr_tips_wrapper
+		margin-left: -100px
+		height: 200px
+		.chatr_tips
+			width: 175px
+			border: 1px #758199 solid
+			display: inline-block
+			vertical-align: top
+			margin-right: 4px
+			ol
+				padding-left: 29px
+				padding-top: 12px
+				display: none
+				
+				
+				li
+					font-size: 12px
+					color: #758199
+		
+				
+			.chatr_tips_header
+				background-color: #485061
+				margin-top: -1px
+				margin-right: -1px
+				margin-left: -1px
+				margin-bottom: -1px
+				text-align: center
+				color: #fff
+				font-weight: bold
+				line-height: 18px
+				font-size: 14px
+				padding: 8px 0px
+				span
+					font-weight: normal
+		.chatr_tips_active
+			.chatr_tips_header
+				background-color: $accent
+			ol
+				display: block
+	.checkbox_what_we_do
+		padding-right: 62px
+		label
+			width: 100%
+			text-align: left
+			box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06)
+			display: block
+			padding: 15px 0px 15px 32px
+			margin-left: 30px
+			font-family: "Roboto" , sans-serif
+			font-size: 18px
+			font-weight: 700
+			color: #758199
+			position: relative
+			input
+				opacity: 0
+			span
+				text-align: right
+				position: absolute
+				right: 0
+				left: 100%
+				margin-left: -48px
+				width: 16px
+				height: 2px
+				background-color: $accent
+				top: 50%
+				margin-top: -1px
+				transition: all 0.2s
+				&:before
+					content: ''
+					width: 8px
+					height: 2px
+					margin-top: -3px
+					margin-left: 8px
+					display: block
+					background: $accent
+					position: absolute
+					transform: rotate(45deg)
+					transition: all 0.2s
+
+				&:after
+					content: ''
+					width: 8px
+					height: 2px
+					margin-top: 3px
+					margin-left: 8px
+					display: block
+					background: $accent
+					position: absolute
+					transform: rotate(-45deg)
+					transition: all 0.2s
+			.arrow_active
+				&:before
+					transform: rotate(0deg)
+					margin-top: 0px
+					height: 0px
+				&:after
+					transform: rotate(0deg)
+					margin-top: 0px
+					margin-bottom: 1px	
+					height: 0px
+		.checkbox_what_we_do_img_slide_1 , .checkbox_what_we_do_img_slide_2 , .checkbox_what_we_do_img_slide_3 , .checkbox_what_we_do_img_slide_4
+			display: none
+			img
+				width: 100%		
+				padding-left: 30px
+				padding-right: 20px
+				padding-top: 30px
+				padding-bottom: 30px
+				
+	.marketplace_look
+		padding-left: 50px
+		
+		a
+			color: #758199
+			font-size: 16px
+			position: relative
+			top: 20px
+			&:hover
+				color: $accent
+			
+		.marketplace_look_one
+			box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08)
+			display: inline-block
+			width: 100%
+			height: 100%
+			cursor: pointer
+
+					
+			.marketplace_look_image
+
+				img
+					width: 100%
+					padding: 20px 20px
+			.marketplace_look_header
+				background-color: #758199
+				color: #fff
+				text-align: center
+				font-family: "Khula" , sans-serif
+				font-size: 20px
+				font-weight: bold
+				padding: 10px
+				a
+					color: #fff
+					font-size: 20px
+					text-decoration: none
+					display: block
+					padding: 10px
+					display: inline-block
+					vertical-align: middle
+					position: relative
+					top: 0px
+			.marketplace_look_header_link
+				padding: 0px
+		.marketplace_look_two
+			cursor: auto
+			.marketplace_look_image
+				img
+					display: block
+					margin-top: 50px
+		h2
+			text-align: left
+			margin-left: 0px
+			
+			font-size: 24px
+			font-weight: bold
+			margin-top: 150px
+.partners
+	.block_name
+		margin-top: 110px
+	.partners_text
+		color: #758199
+		font-size: 18px
+		line-height: 30px
+		margin-left: 50px
+		max-width: 420px
+	.partners_image
+		img
+			width: 100%
+			margin-top: 65px
+			margin-left: -45px
+			max-width: 600px
+
+	.partner_images_mobile
+		margin-top: 70px
+		display: none
+		img
+			max-width: 250px
+			display: block
+			margin: auto
+			margin-top: 20px
+.blog
+	
+	margin-top: 140px			
+	.block_name
+		margin-top: 150px
+	.blog_background
+		background-color: #F1F3F8
+		padding-bottom: 380px
+	.blog_wrapper
+		padding: 0px 110px 0px 40px
+		.blog_kart
+			width: 100%
+			margin-top: -330px
+			position: relative
+			
+			&:hover
+				.img_blog
+					background-size: 110%
+					
+				.blog_arrow
+					background-color: #11ACFA
+			.img_blog
+				width: 100%
+				height: 330px
+				background-image: url(../img/blog_one.png)
+				background-size: 100%
+				background-position-x: center
+				background-position-y: center
+				transition: all 0.2s
+				
+
+			a
+				text-decoration: none
+				.blog_arrow
+					background-color: $accent
+					text-align: center
+					width: 48px
+					padding: 14px 0px
+					color: #fff
+					font-size: 12px
+					position: absolute
+					bottom: 0
+					right: 0
+					
+					
+						
+				p
+					font-family: "Khula" , sans-serif
+					font-size: 20px
+					color: #22242A
+					font-weight: 600
+					line-height: 32px
+					padding:  32px
+					box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08)
+					height: 234px
+		.block_kart_two
+			.img_blog
+				background-image: url(../img/blog_two.png)
+		.block_kart_three
+			.img_blog
+				background-image: url(../img/blog_three.png)
+.get_in_touch
+	background-color: #22242A
+	
+	display: block
+	
+	height: 400px
+	margin-bottom: -5px
+	width: 400px
+	position: absolute
+	z-index: 99999999
+	bottom: 50%
+	margin-bottom: -250px
+	margin-left: 177px
+
+
+	h2
+		color: #fff
+	.block_name
+		margin-top: 110px
+	.city
+		font-size: 24px
+		line-height: 52px
+		margin-left: 50px
+		margin-top: 22px
+		font-family: "Khula" , sans-serif
+		font-weight: 600
+		text-transform: uppercase
+		color: #fff
+	.contact_info
+		opacity: 0.6
+		font-size: 18px
+		line-height: 45px
+		color: #fff
+		margin-left: 50px
+		font-weight: normal
+.contacts
+	height: 100vh
+	margin-top: 140px
+#map
+	width: 100%
+	padding-left: 63px
+	padding-bottom: -10px
+	height: 640px
+	iframe
+		height: 100vh
+		pointer-events: none
+
+@media screen and (min-width: 1920px)
+	.our_thesis .theses_images
+		padding-right: 110px
+	.header h1
+		font-size: 54px
+		width: 606px
+		line-height: 75px
+	.nav-wrap ul li a
+		font-size: 20px
+	.nav-wrap ul li .blu_line
+		margin-top: 17px
+	.header .down_text a
+		font-size: 18px
+	h2
+		font-size: 54px	
+		line-height: 70px
+	.what_we_do .chatr img
+		margin-left: -120px
+	.nav-wrap
+		width: 226px
+	.nav-wrap ul li
+		width: 189px
+	.block_name
+		font-size: 18px
+	.about_us
+		.videoPoster
+			height: 760px
+		.video_wrapper_full
+			height: 760px
+	.who_we_are .who_we_text
+		font-size: 22px
+		line-height: 36px
+		font-weight: normal
+		width: 507px
+	h3
+		font-size: 32px
+		font-weight: bold
+	.who_we_are .advantages_wrapper .advantages_texts .advantages_text
+		font-size: 20px
+		line-height: 26px
+		p
+			width: 410px
+	.who_we_are .advantages_wrapper .advantages_icons .advantages_icon
+		img
+			width: 95px
+	.who_we_are .advantages_wrapper .advantages_texts .advantages_text
+		padding-top: 156px
+	.who_we_are .advantages_wrapper .advantages_texts
+		margin-top: -135px
+	.our_thesis .our_thesis_text
+		font-size: 22px
+		width: 1050px
+	.our_thesis .theses_links_wrapper a
+		font-size: 20px
+	.our_thesis .theses_links_wrapper .theses_link
+		margin-right: 60px
+	.what_we_do .what_we_do_text
+		font-size: 22px
+		line-height: 36px
+		max-width: 1034px
+	.what_we_do .what_we_do_content .content_menu .menu_link
+		font-size: 22px
+
+	.what_we_do .what_we_do_content .content_menu
+		max-width: 400px
+	.what_we_do .marketplace_look h2
+		font-size: 32px
+	.partners .partners_text
+		font-size: 22px
+		font-weight: 400
+		max-width: 512px
+		line-height: 36px
+	.blog .blog_wrapper .blog_kart a p
+		font-size: 24px
+		line-height: 36px
+	.blog .blog_wrapper .blog_kart a .blog_arrow
+		width: 71px
+		padding: 26px 0px
+	.get_in_touch 
+		width: 450px
+		margin-left: 226px
+	.get_in_touch .contact_info
+		font-size: 22px
+	.nav-wrap ul .active .blu_line
+		width: 32px
+	.nav-wrap .logo img:last-child
+		width: 129px
+	.nav-wrap .social_wrap .social a
+		font-size: 20px
+@media screen and (max-width: 1500px)
+	.what_we_do .what_we_do_content .content_menu .menu_link
+		font-size: 17px
+	.what_we_do .what_we_do_content .content_menu
+		margin-left: 20px
+	.what_we_do .chatr img 
+		margin-left: -66px
+	.what_we_do .chatr_tips_wrapper .chatr_tips
+		width: 153px
+	.what_we_do .chatr_tips_wrapper
+		margin-left: -60px
+	.what_we_do .chatr_tips_wrapper .chatr_tips .chatr_tips_header
+		font-size: 13px
+	
+	footer .footer_menu
+		width: 180px
+	footer .logo img
+		margin-left: -31px
+	.header .down_text .grey_line
+		margin-left: 28px
+		width: 50px
+	.our_thesis .theses_images
+		padding-right: 10px
+@media screen and (max-width: 1400px)
+	.blog .blog_wrapper .blog_kart .img_blog
+		height: 277px
+	.blog .blog_wrapper .blog_kart
+		margin-top: -277px	
+@import "media" // Always at the end
